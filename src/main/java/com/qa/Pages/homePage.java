@@ -16,23 +16,63 @@ public class homePage extends basePage{
 
 
 	private By aboutUsLink = By.linkText("About Us");
+	private By LocationsLink = By.linkText("Locations");
+	private By ProductsLink = By.linkText("Products");
+	private By ServicesLink = By.linkText("Services");
+	private By RegisterLink = By.linkText("Register");
+	private By ForgetLoginLink = By.linkText("Forgot login info?");
 	
-	
-	
-	public boolean aboutUsLinkTest() {
+	public boolean aboutUsLinkExistsTest() {
 		
 		return driver.findElement(aboutUsLink).isDisplayed();
 		
 	}
 	
-private By ServicesLink = By.linkText("Services");
+
 	
 	
 	
-	public boolean ServicesLinkLinkTest() {
+	public boolean ProductsLinkExistsTest() {
+		
+		return driver.findElement(ProductsLink).isDisplayed();
+		
+	}
+	
+	
+	
+	
+	public boolean LocationsLinkExistsTest() {
+		
+		return driver.findElement(LocationsLink).isDisplayed();
+		
+	}
+
+	
+	
+	
+	public boolean ServicesLinkExistsTest() {
 		
 		return driver.findElement(ServicesLink).isDisplayed();
 		
+	}
+	
+	
+	public boolean RegisterLinkExistsTest() {
+		
+		return driver.findElement(ServicesLink).isDisplayed();
+		
+	}
+	public boolean ForgetLoginLinkExistsTest() {
+		
+		return driver.findElement(ForgetLoginLink).isDisplayed();
+		
+	}
+	
+	
+	
+	
+	public String getPageTitle() {
+		return driver.getTitle();
 	}
 	
 	
