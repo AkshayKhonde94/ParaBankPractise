@@ -1,5 +1,23 @@
 package com.qa.testCases;
 
-public class HomePageTest {
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
+import com.qa.basePage.baseTest;
+
+public class HomePageTest extends baseTest{
+
+	@Test
+	public void aboutUsLinkExistsTest() {
+		Assert.assertTrue(homepage.aboutUsLinkTest());
+	}
+	
+	@Test
+	public void servicesLinkExistsTest() {
+		Assert.assertTrue(homepage.aboutUsLinkTest());
+	}
+	
+	
+	
+	
 }
